@@ -7,7 +7,7 @@ print("a = {0} type {3} \00 | \00 b = {1} type {4} \00 | \00 c = {2} type {5}"\
 
 
 #print("a+b:{4} \t a = {0} ba type {1} \t va b = {2} ba type {3}\n".format(a,type(a),b,type(b),(a+b)))
-# not execute or error str+int ghabel ghabool nist
+# (str+int) not possible
 print("....................................................................................")
 
 print("a*b::>> \t {0} = {1} with type {2} \t and {3} = {4} with type {5}\nAns = {6}\twith type {7}"\
@@ -27,7 +27,7 @@ print(".........................................................................
 
 """print("b+c::>> \t {0} = {1} with type {2} \t and {3} = {4} with type {5}\nAns = {6}"\
 .format('b',b,type(b),'c',c,type(c),(b+c))) """
-# str + int invalid
+# (str+int) not possible
 print("....................................................................................")
 
 print("b+b::>> \t {0} = {1} with type {2} \t and {3} = {4} with type {5}\nAns = {6}\twith type {7}"\
@@ -36,7 +36,7 @@ print(".........................................................................
 
 """print("b*b::>> \t {0} = {1} with type {2} \t and {3} = {4} with type {5}\nAns = {6}"\
 .format('b',b,type(b),'b',b,type(b),(b*b)))"""
-# str ghabel zarb nist
+# (str*str) not possible
 print("....................................................................................")
 
 print("b+\'9\'::>> \t {0} = {1} with type {2} \t and {3} = {4} with type {5}\nAns = {6}\twith type {7}"\
@@ -62,3 +62,35 @@ print(".........................................................................
 print("len(b)+a::>> \t {0} = {1} with type {2} \t and {3} = {4} with type {5}\nAns = {6}\twith type {7}"\
 .format('b',b,type(b),'a',a,type(a),(len(b)+a),type(len(b)+a))) 
 print("....................................................................................")
+
+"""print("len(a)+c::>> \t {0} = {1} with type {2} \t and {3} = {4} with type {5}\nAns = {6}\twith type {7}"\
+.format('a',a,type(a),'c',c,type(c),(len(a)+c),type(len(a)+c))) """
+# int has no len()
+print("....................................................................................")
+
+print("type(b)==type('a')::>> \t {0} = {1} with type {2} \t and {3} = {4} with type {5}\nAns = {6}\twith type {7}"\
+.format('b',b,type(b),'a',a,type(a),(type(b)==type('a')),(type(type(b)==type('a')))))
+print("....................................................................................")
+
+"""print("type(long(b))::>> \t {0} = {1} with type {2} \t and {3} = {4} with type {5}\nAns = {6}\twith type {7}"\
+.format('b',b,type(b),'b',b,type(b),(type(long(b))),(type(type(long(b))))))"""
+# long vojod nadarad
+print("....................................................................................")
+
+print("not a!=9::>> \t {0} = {1} with type {2} \t and {3} = {4} with type {5}\nAns = {6}\twith type {7}"\
+.format('a',a,type(a),'9',9,type(9),(not a!=9),(type(not a!=9))))
+print(".....................................................................................")
+
+print("a>c and int(b)>a::>> \t {0} = {1} with type {2} \t and {3} = {4} with type {5}\tand {6} = {7} with type {8}\n\
+Ans = {9}\twith type {10}".format('a',a,type(a),'b',b,type(b),'c',c,type(c),(a>c and int(b)>a),type(a>c and int(b)>a)))
+print("....................................................................................")
+
+print("b>'a'::>> \t {0} = {1} with type {2} \t and {3} = {4} with type {5}\nAns = {6}\twith type {7}"\
+.format('b',b,type(b),'a',a,type(a),(b>'a'),(type(b>'a'))))
+print(".....................................................................................")
+
+print("a>>1::>> \t {0} = {1} with type {2} \t and {3} = {4} with type {5}\nAns = {6}\twith type {7}"\
+.format('a',a,type(a),'1',1,type(1),(a>>1),(type(a>>1))))
+print(".....................................................................................")
+
+
