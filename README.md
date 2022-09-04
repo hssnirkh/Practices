@@ -2,6 +2,7 @@
 
 python learning !!!
 
-change frome android.
+change frome Termux !
+
 
 
